@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 import { getMovie, insertMovie, updateMovie, deleteMovie } from '../../../../redux/actions/movie'
 import FManageMovie from '../../../../components/forms/manage/movie/F-Manage-Movie'
 import MMovieData from '../../../../components/template/manage/movie/T-MM-Data'
-// import image from "../../../../assets/image/hl2.png"
 
 class ManageMovie extends Component {
   constructor(props) {
@@ -250,7 +249,6 @@ class ManageMovie extends Component {
         handleSubmit={ this.handleSubmit.bind(this) }
         selectDate={ this.selectDate.bind(this) }
         handleNewMovie={ this.handleNewMovie.bind(this) }
-        // handleNewMovie={ this.handleNewMovie() }
       />
       <MMovieData
         movies={ movies }

@@ -34,7 +34,9 @@ class FSignin extends Component {
     ? alert("invalid email or password")
     : login(form)
     .then((res) => {
+      const user = res.value.data.data.user
       const token = res.value.data.data.token
+      localStorage.setItem('username', user.username)
       localStorage.setItem('token', token)
       this.props.history.push('/')
     }).catch((err) => {

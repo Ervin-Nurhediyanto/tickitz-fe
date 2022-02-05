@@ -17,12 +17,13 @@ class NavProfD extends Component {
   }
 
   render() {
+    const username = localStorage.getItem('username')
     return (
       <Col xs={2} lg={2} className="px-3 py-2">
         <Nav variant="pills" className='d-flex justify-content-end'>
-          <NavDropdown title="Username" id="nav-dropdown" className='d-lg-inline'>
-            <NavDropdown.Item eventKey="4.1">Profile</NavDropdown.Item>
-            <NavDropdown.Divider/>
+          <NavDropdown title={ username } id="nav-dropdown" className='d-lg-inline'>
+            {/* <NavDropdown.Item eventKey="4.1">Profile</NavDropdown.Item>
+            <NavDropdown.Divider/> */}
             <NavDropdown.Item eventKey="4.2" onClick={() => this.handleLogout() }>Logout</NavDropdown.Item>
           </NavDropdown>
         </Nav>
