@@ -1,0 +1,12 @@
+.box-shadow-1 {
+  box-shadow: 0px 8px 24px rgba(186, 186, 186, 0.16);
+}
+.box-shadow-2 {
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.08);
+}
+.box-shadow-2:hover {
+  box-shadow: -3px -5px rgba(0, 0, 0, 0.08);
+}
+.box-shadow-card {
+  box-shadow: 0px 8px 16px rgba(95, 46, 234, 0.4);
+}
