@@ -39,9 +39,9 @@ class UPmovie extends Component {
     this.props.history.push(`/detail/${id}`)
   }
 
-  handleOrder = (id) => {
-    this.props.history.push(`/order/${id}`)
-  }
+  // handleOrder = (id) => {
+  //   this.props.history.push(`/order/${id}`)
+  // }
 
   handlePageClick = (page) => {
     const today = new Date()
@@ -79,7 +79,7 @@ class UPmovie extends Component {
                     name={ movie.title }
                     category={ movie.category }
                     handleClick_01={ this.handleDetail.bind(this) }
-                    handleClick_02={ this.handleOrder.bind(this) }
+                    // handleClick_02={ this.handleOrder.bind(this) }
                   />
                 </Col>
               )
