@@ -37,7 +37,7 @@ class CardMovie extends Component {
 
         {/* BUTTON BOOK */}
         {
-          handleClick_01
+          handleClick_02
           ? <div className="mt-4 d-flex justify-content-center">
               <Button
                 variant='primary'

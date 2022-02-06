@@ -36,7 +36,8 @@ class SHmovie extends Component {
   }
 
   handleOrder = (id) => {
-    this.props.history.push(`/order/${id}`)
+    // this.props.history.push(`/order/${id}`)
+    alert('MAINTENANCE SERVER')
   }
 
   handlePageClick = (page) => {
